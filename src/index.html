@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Rebeloutpost</title>
+  <title>Rebel Outpost</title>
   <base href="/">
-
+  <link href="./main.css" rel="stylesheet">
   {{#unless environment.production}}
   <script src="/ember-cli-live-reload.js" type="text/javascript"></script>
   {{/unless}}
@@ -12,9 +12,74 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <div id="wrapper">
+    <div id="header-wrapper">
+      <div id="header" class="container">
+        <div id="logo">
+          <div><img src="images/rositesemired.png"/></div>
+        </div>
+        <div id="menu">
+          <ul>
+            <li class="current_page_item"><a href="#">Homepage</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="banner">
+        <div class="content">
+          <div><img src="images/programming.png" width="1000" height="400" alt="" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <rebeloutpost-app>Loading...</rebeloutpost-app>
 
-  
+
+  <div id="footer-content-wrapper">
+    <div id="footer-content">
+      <div id="fbox1">
+        <h2>Fusce ultrices fringilla</h2>
+        <ul class="style1">
+          <li class="first"><a href="#">Maecenas luctus lectus at sapien</a></li>
+          <li><a href="#">Etiam rhoncus volutpat erat</a></li>
+          <li><a href="#">Etiam posuere augue sit amet nisl</a></li>
+          <li><a href="#">Mauris vulputate dolor sit amet nibh</a></li>
+          <li><a href="#">Etiam posuere augue sit amet nisl</a></li>
+        </ul>
+      </div>
+      <div id="fbox2">
+        <h2>Nulla luctus eleifend</h2>
+        <ul class="style1">
+          <li class="first"><a href="#">Maecenas luctus lectus at sapien</a></li>
+          <li><a href="#">Etiam rhoncus volutpat erat</a></li>
+          <li><a href="#">Etiam posuere augue sit amet nisl</a></li>
+          <li><a href="#">Mauris vulputate dolor sit amet nibh</a></li>
+          <li><a href="#">Etiam posuere augue sit amet nisl</a></li>
+        </ul>
+      </div>
+      <div id="fbox3">
+        <h2>Maecenas luctus lectus</h2>
+        <ul class="style1">
+          <li class="first"><a href="#">Maecenas luctus lectus at sapien</a></li>
+          <li><a href="#">Etiam rhoncus volutpat erat</a></li>
+          <li><a href="#">Etiam posuere augue sit amet nisl</a></li>
+          <li><a href="#">Mauris vulputate dolor sit amet nibh</a></li>
+          <li><a href="#">Etiam posuere augue sit amet nisl</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <p>Copyright (c) 2016 Skorpion. All rights reserved.</p>
+  </div>
+
+
+
 
     {{#each scripts.polyfills}}<script src="{{.}}"></script>{{/each}}
     <script>
@@ -23,7 +88,7 @@
       }).catch(console.error.bind(console));
     </script>
 
-  
+
 
 
 
